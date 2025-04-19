@@ -12,17 +12,10 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
-  nix.settings = {
-    experimental-features = [
-      "nix-command"
-      "flakes"
-    ];
-    substituters = [ "https://mirror.sjtu.edu.cn/nix-channels/store" ];
-  };
-
   imports = [
     ./desktop.nix
     ./disk.nix
+    ./nix.nix
     ./packages.nix
     ./users.nix
   ];
