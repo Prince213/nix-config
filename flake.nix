@@ -6,6 +6,10 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -17,6 +21,7 @@
       nixpkgs,
       flake-parts,
       disko,
+      home-manager,
       treefmt-nix,
       ...
     }:
@@ -29,6 +34,7 @@
         modules = [
           ./systems/apus
           disko.nixosModules.default
+          home-manager.nixosModules.default
         ];
       };
       perSystem = {
