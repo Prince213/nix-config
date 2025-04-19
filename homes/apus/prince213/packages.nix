@@ -27,6 +27,8 @@
     };
   };
 
+  programs.kitty.enable = true;
+
   programs.starship.enable = true;
 
   home.packages = with pkgs; [
