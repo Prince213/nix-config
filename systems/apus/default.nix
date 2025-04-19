@@ -3,6 +3,7 @@
 
   system.stateVersion = "25.05";
 
+  boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
 
   imports = [
