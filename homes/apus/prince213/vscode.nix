@@ -11,6 +11,9 @@
         github.github-vscode-theme
         jnoortheen.nix-ide
       ];
+      userSettings = {
+        "workbench.colorTheme" = "GitHub Dark Default";
+      };
     };
   };
 }
