@@ -8,6 +8,8 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
+  programs.fish.enable = true;
+
   imports = [
     ./desktop.nix
     ./disk.nix
