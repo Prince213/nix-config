@@ -20,6 +20,10 @@
       ui = {
         show-cryptographic-signatures = true;
       };
+      signing = {
+        behavior = "own";
+        backend = "gpg";
+      };
     };
   };
 
