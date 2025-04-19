@@ -1,10 +1,14 @@
+{ pkgs, ... }:
 {
   programs.fish.enable = true;
 
   programs.git.enable = true;
 
   programs.gpg.enable = true;
-  services.gpg-agent.enable = true;
+  services.gpg-agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-qt;
+  };
 
   programs.starship.enable = true;
 }
