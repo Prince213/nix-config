@@ -10,6 +10,8 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
+  hardware.bluetooth.enable = true;
+
   networking.networkmanager.enable = true;
 
   nix.settings.substituters = [
