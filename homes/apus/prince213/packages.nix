@@ -28,4 +28,8 @@
   };
 
   programs.starship.enable = true;
+
+  home.packages = with pkgs; [
+    (iosevka-bin.override { variant = "SS07"; })
+  ];
 }
