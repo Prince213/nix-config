@@ -6,6 +6,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
 
+  hardware.cpu.intel.updateMicrocode = true;
+
   imports = [
     ./disk.nix
   ];
