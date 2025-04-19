@@ -1,2 +1,5 @@
 {
+  home-manager = {
+    useUserPackages = true;
+  };
 }
