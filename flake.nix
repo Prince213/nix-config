@@ -9,12 +9,22 @@
   };
 
   outputs =
-    inputs@{ flake-parts, treefmt-nix, ... }:
+    inputs@{
+      nixpkgs,
+      flake-parts,
+      treefmt-nix,
+      ...
+    }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [ "x86_64-linux" ];
       imports = [
         treefmt-nix.flakeModule
       ];
+      flake.nixosConfigurations.apus = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./systems/apus
+        ];
+      };
       perSystem = {
         treefmt = {
           projectRootFile = "flake.nix";
