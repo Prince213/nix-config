@@ -3,6 +3,8 @@
 
   system.stateVersion = "25.05";
 
+  networking.hostName = "apus";
+
   time.timeZone = "Asia/Shanghai";
 
   boot.loader.efi.canTouchEfiVariables = true;
