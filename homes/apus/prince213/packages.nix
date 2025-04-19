@@ -32,6 +32,8 @@
     font.name = "Iosevka Term SS07";
   };
 
+  programs.nh.enable = true;
+
   programs.starship.enable = true;
 
   nixpkgs.overlays = [
