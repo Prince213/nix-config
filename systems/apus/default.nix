@@ -9,23 +9,15 @@
   boot.loader.systemd-boot.enable = true;
 
   hardware.cpu.intel.updateMicrocode = true;
-  hardware.enableRedistributableFirmware = true;
-
-  hardware.bluetooth.enable = true;
-
-  networking.networkmanager.enable = true;
 
   nix.settings.substituters = [
     "https://mirror.sjtu.edu.cn/nix-channels/store"
   ];
 
-  programs.clash-verge.enable = true;
-
-  programs.fish.enable = true;
-
   imports = [
     ./desktop.nix
     ./disk.nix
+    ./packages.nix
     ./users.nix
   ];
 }
