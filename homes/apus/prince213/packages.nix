@@ -27,7 +27,10 @@
     };
   };
 
-  programs.kitty.enable = true;
+  programs.kitty = {
+    enable = true;
+    font.name = "Iosevka Term SS07";
+  };
 
   programs.starship.enable = true;
 
