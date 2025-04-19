@@ -14,7 +14,14 @@
     pinentryPackage = pkgs.pinentry-qt;
   };
 
-  programs.jujutsu.enable = true;
+  programs.jujutsu = {
+    enable = true;
+    settings = {
+      ui = {
+        show-cryptographic-signatures = true;
+      };
+    };
+  };
 
   programs.starship.enable = true;
 }
