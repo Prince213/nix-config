@@ -12,6 +12,10 @@
 
   networking.networkmanager.enable = true;
 
+  nix.settings.substituters = [
+    "https://mirror.sjtu.edu.cn/nix-channels/store"
+  ];
+
   programs.fish.enable = true;
 
   imports = [
