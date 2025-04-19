@@ -19,6 +19,8 @@
     "https://mirror.sjtu.edu.cn/nix-channels/store"
   ];
 
+  programs.clash-verge.enable = true;
+
   programs.fish.enable = true;
 
   imports = [
