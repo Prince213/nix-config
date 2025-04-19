@@ -8,6 +8,7 @@
       enableExtensionUpdateCheck = false;
       enableUpdateCheck = false;
       extensions = with pkgs.open-vsx; [
+        github.github-vscode-theme
         jnoortheen.nix-ide
       ];
     };
