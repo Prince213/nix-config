@@ -32,6 +32,7 @@
       ];
       flake.nixosConfigurations.apus = nixpkgs.lib.nixosSystem {
         modules = [
+          ./homes/apus
           ./systems/apus
           disko.nixosModules.default
           home-manager.nixosModules.default
