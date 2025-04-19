@@ -11,5 +11,6 @@
   imports = [
     ./desktop.nix
     ./disk.nix
+    ./users.nix
   ];
 }
