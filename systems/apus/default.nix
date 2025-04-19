@@ -9,6 +9,7 @@
   boot.loader.systemd-boot.enable = true;
 
   hardware.cpu.intel.updateMicrocode = true;
+  hardware.enableRedistributableFirmware = true;
 
   hardware.bluetooth.enable = true;
 
