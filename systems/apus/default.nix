@@ -3,6 +3,8 @@
 
   system.stateVersion = "25.05";
 
+  time.timeZone = "Asia/Shanghai";
+
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
 
