@@ -2,6 +2,8 @@
 {
   programs.fastfetch.enable = true;
 
+  programs.firefox.enable = true;
+
   programs.fish.enable = true;
 
   programs.git.enable = true;
