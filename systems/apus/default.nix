@@ -10,6 +10,8 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
+  networking.networkmanager.enable = true;
+
   programs.fish.enable = true;
 
   imports = [
