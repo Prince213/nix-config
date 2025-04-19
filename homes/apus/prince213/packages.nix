@@ -14,5 +14,7 @@
     pinentryPackage = pkgs.pinentry-qt;
   };
 
+  programs.jujutsu.enable = true;
+
   programs.starship.enable = true;
 }
