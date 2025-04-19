@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ vscode-extensions, pkgs, ... }:
 {
   programs.fastfetch.enable = true;
 
@@ -33,6 +33,10 @@
   };
 
   programs.starship.enable = true;
+
+  nixpkgs.overlays = [
+    vscode-extensions.overlays.default
+  ];
 
   home.packages = with pkgs; [
     (iosevka-bin.override { variant = "SS07"; })

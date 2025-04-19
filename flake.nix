@@ -14,6 +14,10 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -23,6 +27,7 @@
       disko,
       home-manager,
       treefmt-nix,
+      vscode-extensions,
       ...
     }:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -34,6 +39,7 @@
         modules = [
           ./homes/apus
           ./systems/apus
+          { home-manager.extraSpecialArgs = { inherit vscode-extensions; }; }
           disko.nixosModules.default
           home-manager.nixosModules.default
         ];
