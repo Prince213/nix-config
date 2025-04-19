@@ -9,6 +9,7 @@
   hardware.cpu.intel.updateMicrocode = true;
 
   imports = [
+    ./desktop.nix
     ./disk.nix
   ];
 }
