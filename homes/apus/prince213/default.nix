@@ -1,7 +1,7 @@
 {
   home.stateVersion = "25.05";
 
-  programs.fish.enable = true;
-
-  programs.starship.enable = true;
+  imports = [
+    ./packages.nix
+  ];
 }
