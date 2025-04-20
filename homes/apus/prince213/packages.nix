@@ -35,5 +35,6 @@
 
   home.packages = with pkgs; [
     (iosevka-bin.override { variant = "SS07"; })
+    nixd
   ];
 }
