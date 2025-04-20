@@ -16,19 +16,6 @@
     pinentryPackage = pkgs.pinentry-qt;
   };
 
-  programs.jujutsu = {
-    enable = true;
-    settings = {
-      ui = {
-        show-cryptographic-signatures = true;
-      };
-      signing = {
-        behavior = "own";
-        backend = "gpg";
-      };
-    };
-  };
-
   programs.kitty = {
     enable = true;
     font.name = "Iosevka Term SS07";
