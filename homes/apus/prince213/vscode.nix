@@ -14,6 +14,7 @@
       ];
       userSettings = {
         "workbench.colorTheme" = "GitHub Dark Default";
+        "workbench.iconTheme" = "material-icon-theme";
       };
     };
   };
