@@ -4,7 +4,12 @@
 
   programs.fastfetch.enable = true;
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    nativeMessagingHosts = [
+      pkgs.kdePackages.plasma-browser-integration
+    ];
+  };
 
   programs.fish.enable = true;
 
