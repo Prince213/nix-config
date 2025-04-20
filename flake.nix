@@ -10,6 +10,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly = {
+      url = "github:nix-community/neovim-nightly-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -26,6 +30,7 @@
       flake-parts,
       disko,
       home-manager,
+      neovim-nightly,
       treefmt-nix,
       vscode-extensions,
       ...
@@ -39,7 +44,14 @@
         modules = [
           ./homes/apus
           ./systems/apus
-          { home-manager.extraSpecialArgs = { inherit vscode-extensions; }; }
+          {
+            home-manager.extraSpecialArgs = {
+              inherit
+                neovim-nightly
+                vscode-extensions
+                ;
+            };
+          }
           disko.nixosModules.default
           home-manager.nixosModules.default
         ];
