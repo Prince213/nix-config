@@ -27,6 +27,8 @@
 
   programs.starship.enable = true;
 
+  programs.zoxide.enable = true;
+
   nixpkgs.overlays = [
     vscode-extensions.overlays.default
   ];
