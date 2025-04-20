@@ -14,6 +14,10 @@
       url = "github:nix-community/neovim-nightly-overlay";
       # inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,6 +39,7 @@
       disko,
       home-manager,
       neovim-nightly,
+      nix-index-database,
       nixvim,
       treefmt-nix,
       vscode-extensions,
@@ -59,6 +64,7 @@
               };
               sharedModules = [
                 nixvim.homeManagerModules.default
+                nix-index-database.hmModules.nix-index
               ];
             };
           }
