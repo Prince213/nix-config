@@ -23,6 +23,8 @@
 
   programs.nh.enable = true;
 
+  programs.ssh.enable = true;
+
   programs.starship.enable = true;
 
   nixpkgs.overlays = [
