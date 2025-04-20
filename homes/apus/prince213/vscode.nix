@@ -13,6 +13,7 @@
         pkief.material-icon-theme
       ];
       userSettings = {
+        "editor.fontFamily" = "Iosevka SS07";
         "workbench.colorTheme" = "GitHub Dark Default";
         "workbench.iconTheme" = "material-icon-theme";
       };
