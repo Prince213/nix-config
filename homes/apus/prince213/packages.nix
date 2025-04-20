@@ -1,5 +1,7 @@
 { vscode-extensions, pkgs, ... }:
 {
+  programs.direnv.enable = true;
+
   programs.fastfetch.enable = true;
 
   programs.firefox.enable = true;
