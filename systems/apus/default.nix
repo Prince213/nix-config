@@ -15,6 +15,7 @@
   imports = [
     ./desktop.nix
     ./disk.nix
+    ./keyd.nix
     ./nix.nix
     ./packages.nix
     ./users.nix
