@@ -10,6 +10,7 @@
       extensions = with pkgs.open-vsx; [
         github.github-vscode-theme
         jnoortheen.nix-ide
+        pkief.material-icon-theme
       ];
       userSettings = {
         "workbench.colorTheme" = "GitHub Dark Default";
