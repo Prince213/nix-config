@@ -2,6 +2,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    secrets = {
+      url = "/home/prince213/Documents/Projects/nix-secrets";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,6 +40,7 @@
     inputs@{
       nixpkgs,
       flake-parts,
+      secrets,
       disko,
       home-manager,
       neovim-nightly,
@@ -54,6 +59,7 @@
         modules = [
           ./homes/apus
           ./systems/apus
+          secrets.nixosModules.apus
           {
             home-manager = {
               extraSpecialArgs = {
