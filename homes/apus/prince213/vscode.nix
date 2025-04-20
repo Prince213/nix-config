@@ -16,6 +16,9 @@
         "editor.fontFamily" = "Iosevka SS07";
         "workbench.colorTheme" = "GitHub Dark Default";
         "workbench.iconTheme" = "material-icon-theme";
+
+        "nix.enableLanguageServer" = true;
+        "nix.serverPath" = "nixd";
       };
     };
   };
