@@ -12,6 +12,8 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
+  environment.sessionVariables.NIXOS_OZONE_WL = 1;
+
   imports = [
     ./desktop.nix
     ./disk.nix
