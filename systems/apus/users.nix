@@ -7,4 +7,6 @@
     ];
     shell = config.programs.fish.package;
   };
+
+  nix.settings.trusted-users = [ "prince213" ];
 }
