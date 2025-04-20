@@ -21,6 +21,8 @@
 
   programs.nh.enable = true;
 
+  programs.nix-index-database.comma.enable = true;
+
   programs.ssh.enable = true;
 
   programs.starship.enable = true;
