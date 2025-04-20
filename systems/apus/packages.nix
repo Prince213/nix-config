@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   hardware.enableRedistributableFirmware = true;
 
@@ -8,4 +9,8 @@
   programs.fish.enable = true;
 
   networking.networkmanager.enable = true;
+
+  fonts.packages = with pkgs; [
+    noto-fonts-cjk-sans
+  ];
 }
