@@ -27,6 +27,7 @@
             lua
             markdown
             markdown_inline
+            nix
             query
             vim
             vimdoc
