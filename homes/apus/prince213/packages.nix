@@ -24,6 +24,7 @@
   programs.nix-index-database.comma.enable = true;
 
   programs.ssh.enable = true;
+  services.ssh-agent.enable = true;
 
   programs.starship.enable = true;
 
