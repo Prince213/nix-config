@@ -40,5 +40,6 @@
     (iosevka-bin.override { variant = "SS07"; })
     nixd
     scrcpy
+    telegram-desktop
   ];
 }
