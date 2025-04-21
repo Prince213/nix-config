@@ -1,4 +1,9 @@
-{ neovim-nightly, pkgs, ... }:
+{
+  config,
+  neovim-nightly,
+  pkgs,
+  ...
+}:
 {
   programs.nixvim = {
     enable = true;
@@ -8,5 +13,25 @@
     withPython3 = false;
     withRuby = false;
     colorschemes.catppuccin.enable = true;
+
+    plugins = {
+      treesitter = {
+        enable = true;
+        grammarPackages =
+          let
+            cfg = config.programs.nixvim.plugins.treesitter;
+          in
+          with cfg.package.builtGrammars;
+          [
+            c
+            lua
+            markdown
+            markdown_inline
+            query
+            vim
+            vimdoc
+          ];
+      };
+    };
   };
 }
