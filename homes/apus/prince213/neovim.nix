@@ -6,5 +6,6 @@
     defaultEditor = true;
 
     withRuby = false;
+    colorschemes.catppuccin.enable = true;
   };
 }
