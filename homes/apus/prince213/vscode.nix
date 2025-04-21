@@ -11,6 +11,7 @@
         github.github-vscode-theme
         jnoortheen.nix-ide
         lencerf.beancount
+        mkhl.direnv
         pkief.material-icon-theme
       ];
       userSettings = {
