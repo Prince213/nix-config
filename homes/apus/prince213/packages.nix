@@ -23,6 +23,8 @@
 
   programs.nix-index-database.comma.enable = true;
 
+  programs.ripgrep.enable = true;
+
   programs.ssh.enable = true;
   services.ssh-agent.enable = true;
 
