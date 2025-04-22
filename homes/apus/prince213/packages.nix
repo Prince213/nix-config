@@ -1,4 +1,9 @@
-{ vscode-extensions, pkgs, ... }:
+{
+  nix-packages,
+  vscode-extensions,
+  pkgs,
+  ...
+}:
 {
   programs.btop.enable = true;
 
@@ -35,6 +40,7 @@
   programs.zoxide.enable = true;
 
   nixpkgs.overlays = [
+    nix-packages.overlays.wubi98-fonts
     vscode-extensions.overlays.default
   ];
 
@@ -43,5 +49,6 @@
     nixd
     scrcpy
     telegram-desktop
+    wubi98-fonts
   ];
 }
