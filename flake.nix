@@ -6,6 +6,10 @@
       url = "/home/prince213/Documents/Projects/nix-secrets";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-packages = {
+      url = "sourcehut:~prince213/nix-packages";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -48,6 +52,7 @@
       nixpkgs,
       flake-parts,
       secrets,
+      nix-packages,
       disko,
       home-manager,
       neovim-nightly,
@@ -72,6 +77,7 @@
             home-manager = {
               extraSpecialArgs = {
                 inherit
+                  nix-packages
                   neovim-nightly
                   vscode-extensions
                   ;
