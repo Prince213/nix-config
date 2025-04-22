@@ -1,5 +1,7 @@
 { vscode-extensions, pkgs, ... }:
 {
+  programs.btop.enable = true;
+
   programs.direnv.enable = true;
 
   programs.fastfetch.enable = true;
