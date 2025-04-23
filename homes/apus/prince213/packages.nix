@@ -1,9 +1,4 @@
-{
-  nix-packages,
-  vscode-extensions,
-  pkgs,
-  ...
-}:
+{ nix-packages, pkgs, ... }:
 {
   programs.btop.enable = true;
 
@@ -41,7 +36,6 @@
 
   nixpkgs.overlays = [
     nix-packages.overlays.wubi98-fonts
-    vscode-extensions.overlays.default
   ];
 
   home.packages = with pkgs; [

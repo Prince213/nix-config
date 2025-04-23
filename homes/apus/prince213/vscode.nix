@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ vscode-extensions, pkgs, ... }:
 {
   programs.vscode = {
     enable = true;
@@ -7,7 +7,7 @@
     profiles.default = {
       enableExtensionUpdateCheck = false;
       enableUpdateCheck = false;
-      extensions = with pkgs.open-vsx; [
+      extensions = with vscode-extensions.extensions.${pkgs.system}.open-vsx; [
         github.github-vscode-theme
         jnoortheen.nix-ide
         lencerf.beancount
