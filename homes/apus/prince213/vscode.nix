@@ -12,6 +12,7 @@
         jnoortheen.nix-ide
         lencerf.beancount
         mkhl.direnv
+        myriad-dreamin.tinymist
         pkief.material-icon-theme
       ];
       userSettings = {
