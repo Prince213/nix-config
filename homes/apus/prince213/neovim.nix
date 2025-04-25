@@ -19,6 +19,10 @@
       };
     };
 
+    globals = {
+      mapleader = ",";
+    };
+
     plugins = {
       blink-cmp.enable = true;
 
