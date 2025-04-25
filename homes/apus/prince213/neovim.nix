@@ -35,7 +35,12 @@
 
       lualine.enable = true;
 
-      telescope.enable = true;
+      telescope = {
+        enable = true;
+        keymaps = {
+          "<Leader>ff" = "find_files";
+        };
+      };
 
       treesitter = {
         enable = true;
