@@ -31,6 +31,8 @@
 
       lualine.enable = true;
 
+      telescope.enable = true;
+
       treesitter = {
         enable = true;
         grammarPackages =
