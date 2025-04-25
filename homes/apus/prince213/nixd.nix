@@ -11,6 +11,12 @@ let
   };
 in
 {
+  programs.nixvim = {
+    plugins.lsp.servers.nixd = {
+      inherit settings;
+    };
+  };
+
   programs.vscode = {
     profiles.default = {
       userSettings = {
