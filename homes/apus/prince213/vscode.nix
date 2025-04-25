@@ -22,19 +22,6 @@
 
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nixd";
-        "nix.serverSettings".nixd =
-          let
-            self = "(builtins.getFlake \"${toString ../../..}\")";
-            system = "${self}.nixosConfigurations.apus";
-            home = "${system}.options.home-manager.users.type";
-          in
-          {
-            nixpkgs.expr = "${system}._module.args.pkgs";
-            options = {
-              nixos.expr = "${system}.options";
-              home-manager.expr = "${home}.getSubOptions []";
-            };
-          };
       };
     };
   };

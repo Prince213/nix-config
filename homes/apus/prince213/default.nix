@@ -7,6 +7,7 @@
     ./jujutsu.nix
     ./neovim.nix
     ./nix.nix
+    ./nixd.nix
     ./packages.nix
     ./vscode.nix
   ];
