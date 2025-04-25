@@ -16,6 +16,9 @@
 
     plugins = {
       leap.enable = true;
+
+      lsp.enable = true;
+
       lualine.enable = true;
 
       treesitter = {
