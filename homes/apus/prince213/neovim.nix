@@ -17,7 +17,10 @@
     plugins = {
       leap.enable = true;
 
-      lsp.enable = true;
+      lsp = {
+        enable = true;
+        servers.nixd.enable = true;
+      };
 
       lualine.enable = true;
 
