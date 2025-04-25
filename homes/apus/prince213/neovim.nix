@@ -15,6 +15,7 @@
     colorschemes.catppuccin.enable = true;
 
     plugins = {
+      leap.enable = true;
       lualine.enable = true;
 
       treesitter = {
