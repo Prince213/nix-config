@@ -12,7 +12,7 @@
 
     withPython3 = false;
     withRuby = false;
-    colorschemes.catppuccin.enable = true;
+    colorschemes.tokyonight.enable = true;
 
     plugins = {
       blink-cmp.enable = true;
