@@ -15,6 +15,8 @@
     colorschemes.catppuccin.enable = true;
 
     plugins = {
+      blink-cmp.enable = true;
+
       leap.enable = true;
 
       lsp = {
