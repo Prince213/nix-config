@@ -51,6 +51,8 @@
             vimdoc
           ];
       };
+
+      web-devicons.enable = true;
     };
   };
 }
