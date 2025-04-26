@@ -3,6 +3,13 @@
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.enable = true;
 
+  fonts.fontconfig = {
+    defaultFonts = {
+      serif = [ "Noto Serif CJK SC" ];
+      sansSerif = [ "Noto Sans CJK SC" ];
+    };
+  };
+
   i18n.inputMethod = {
     enable = true;
     type = "fcitx5";
