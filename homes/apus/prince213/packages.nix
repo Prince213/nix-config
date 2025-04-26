@@ -35,6 +35,8 @@
 
   programs.starship.enable = true;
 
+  programs.tmux.enable = true;
+
   programs.zoxide.enable = true;
 
   nixpkgs.overlays = [
