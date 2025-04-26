@@ -16,6 +16,13 @@
     fcitx5 = {
       waylandFrontend = true;
       addons = [ pkgs.fcitx5-rime ];
+      settings = {
+        globalOptions = {
+          "Hotkey/TriggerKeys" = {
+            "0" = "Control+Shift+Shift_L";
+          };
+        };
+      };
     };
   };
 }
