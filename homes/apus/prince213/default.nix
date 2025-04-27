@@ -5,6 +5,7 @@
     ./desktop.nix
     ./firefox.nix
     ./jujutsu.nix
+    ./kitty.nix
     ./neovim.nix
     ./nix.nix
     ./nixd.nix
