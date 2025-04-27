@@ -48,6 +48,7 @@
     nixd
     scrcpy
     telegram-desktop
+    wl-clipboard
     wubi98-fonts
   ];
 }
