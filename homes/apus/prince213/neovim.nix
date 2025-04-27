@@ -19,6 +19,10 @@
       };
     };
 
+    opts = {
+      number = true;
+    };
+
     globals = {
       mapleader = ",";
     };
