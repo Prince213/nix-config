@@ -19,6 +19,10 @@
     noto-fonts-cjk-serif
   ];
 
+  hardware.graphics.extraPackages = with pkgs; [
+    intel-media-driver
+  ];
+
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
