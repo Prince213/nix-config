@@ -98,6 +98,7 @@
           modules = [
             ./systems/cetus
             secrets.nixosModules.cetus
+            disko.nixosModules.default
           ];
         };
       };

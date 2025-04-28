@@ -3,4 +3,8 @@
   networking.hostName = "cetus";
   nixpkgs.hostPlatform = "x86_64-linux";
   time.timeZone = "Asia/Shanghai";
+
+  imports = [
+    ./disk.nix
+  ];
 }
