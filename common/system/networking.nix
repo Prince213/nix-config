@@ -1,2 +1,3 @@
 {
+  networking.useNetworkd = true;
 }
