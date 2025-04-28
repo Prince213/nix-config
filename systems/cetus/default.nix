@@ -8,5 +8,6 @@
     ./boot.nix
     ./disk.nix
     ./networking.nix
+    ./users.nix
   ];
 }
