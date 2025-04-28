@@ -10,8 +10,6 @@
 
   programs.localsend.enable = true;
 
-  networking.networkmanager.enable = true;
-
   programs.steam.enable = true;
 
   fonts.packages = with pkgs; [

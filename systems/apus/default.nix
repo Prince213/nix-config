@@ -15,6 +15,7 @@
     ./desktop.nix
     ./disk.nix
     ./keyd.nix
+    ./networking.nix
     ./nix.nix
     ./packages.nix
     ./users.nix
