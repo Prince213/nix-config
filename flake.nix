@@ -73,6 +73,7 @@
           modules = [
             ./homes/apus
             ./systems/apus
+            ./common/system
             secrets.nixosModules.apus
             {
               home-manager = {
@@ -97,6 +98,7 @@
         cetus = nixpkgs.lib.nixosSystem {
           modules = [
             ./systems/cetus
+            ./common/system
             secrets.nixosModules.cetus
             disko.nixosModules.default
           ];
