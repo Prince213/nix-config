@@ -68,30 +68,38 @@
       imports = [
         treefmt-nix.flakeModule
       ];
-      flake.nixosConfigurations.apus = nixpkgs.lib.nixosSystem {
-        modules = [
-          ./homes/apus
-          ./systems/apus
-          secrets.nixosModules.apus
-          {
-            home-manager = {
-              extraSpecialArgs = {
-                inherit
-                  nix-packages
-                  neovim-nightly
-                  vscode-extensions
-                  ;
+      flake.nixosConfigurations = {
+        apus = nixpkgs.lib.nixosSystem {
+          modules = [
+            ./homes/apus
+            ./systems/apus
+            secrets.nixosModules.apus
+            {
+              home-manager = {
+                extraSpecialArgs = {
+                  inherit
+                    nix-packages
+                    neovim-nightly
+                    vscode-extensions
+                    ;
+                };
+                sharedModules = [
+                  nixvim.homeManagerModules.default
+                  nix-index-database.hmModules.nix-index
+                  plasma-manager.homeManagerModules.plasma-manager
+                ];
               };
-              sharedModules = [
-                nixvim.homeManagerModules.default
-                nix-index-database.hmModules.nix-index
-                plasma-manager.homeManagerModules.plasma-manager
-              ];
-            };
-          }
-          disko.nixosModules.default
-          home-manager.nixosModules.default
-        ];
+            }
+            disko.nixosModules.default
+            home-manager.nixosModules.default
+          ];
+        };
+        cetus = nixpkgs.lib.nixosSystem {
+          modules = [
+            ./systems/cetus
+            secrets.nixosModules.cetus
+          ];
+        };
       };
       perSystem = {
         treefmt = {
