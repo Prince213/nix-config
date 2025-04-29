@@ -14,6 +14,11 @@
 
   services.printing.enable = true;
 
+  systemd.services.ensure-printers = {
+    wants = [ "network-online.target" ];
+    after = [ "network-online.target" ];
+  };
+
   fonts.packages = with pkgs; [
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
