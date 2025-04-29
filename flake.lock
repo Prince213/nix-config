@@ -504,11 +504,11 @@
         "nuschtosSearch": "nuschtosSearch"
       },
       "locked": {
-        "lastModified": 1745878358,
-        "narHash": "sha256-YImreQ+dij3mLeqcjuIZZvT13Yscj7O1dxOC/+TZdJM=",
+        "lastModified": 1745915766,
+        "narHash": "sha256-Fe9YN3lzpNEW7lhh4DeWaD1fznCDlxruEYOa38Om22U=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "7a6c5b48031059ace82ce90b9a279ec243999554",
+        "rev": "9caeb51238748d885a91562e753d41b74155ff59",
         "type": "github"
       },
       "original": {
@@ -589,8 +589,8 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1745906382,
-        "narHash": "sha256-l8TmKLFCaLrylSn/p45GiigUcQSUwQNZuB8KWWaNJOo=",
+        "lastModified": 1745923270,
+        "narHash": "sha256-qj9NfcOmlpnCRQq6yV0f0qMYwYtqGJsTrdZvGafXgqg=",
         "path": "/home/prince213/Documents/Projects/nix-secrets",
         "type": "path"
       },
