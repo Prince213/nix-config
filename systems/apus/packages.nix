@@ -12,7 +12,10 @@
 
   programs.steam.enable = true;
 
-  services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    cups-pdf.enable = true;
+  };
 
   systemd.services.ensure-printers = {
     wants = [ "network-online.target" ];
