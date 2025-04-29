@@ -21,10 +21,18 @@
     intel-media-driver
   ];
 
-  nixpkgs.config.allowUnfreePredicate =
-    pkg:
-    builtins.elem (lib.getName pkg) [
-      "steam"
-      "steam-unwrapped"
+  nixpkgs.config = {
+    allowUnfreePredicate =
+      pkg:
+      builtins.elem (lib.getName pkg) [
+        "steam"
+        "steam-unwrapped"
+      ];
+    permittedInsecurePackages = [
+      "clash-verge-rev-2.2.3"
+      "clash-verge-rev-service-2.2.3"
+      "clash-verge-rev-unwrapped-2.2.3"
+      "clash-verge-rev-webui-2.2.3"
     ];
+  };
 }
