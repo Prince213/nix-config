@@ -34,7 +34,10 @@
 
       lsp = {
         enable = true;
-        servers.nixd.enable = true;
+        servers = {
+          nixd.enable = true;
+          gopls.enable = true;
+        };
       };
 
       lualine.enable = true;
