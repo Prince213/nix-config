@@ -13,6 +13,8 @@
 
   programs.git.enable = true;
 
+  programs.go.enable = true;
+
   programs.gpg.enable = true;
   services.gpg-agent = {
     enable = true;
