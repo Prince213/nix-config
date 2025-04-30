@@ -9,6 +9,7 @@
       enableUpdateCheck = false;
       extensions = with vscode-extensions.extensions.${pkgs.system}.open-vsx; [
         github.github-vscode-theme
+        golang.go
         jnoortheen.nix-ide
         lencerf.beancount
         mkhl.direnv
