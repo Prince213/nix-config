@@ -103,6 +103,13 @@
             disko.nixosModules.default
           ];
         };
+        draco = nixpkgs.lib.nixosSystem {
+          modules = [
+            ./systems/draco
+            ./common/system
+            secrets.nixosModules.draco
+          ];
+        };
       };
       perSystem = {
         treefmt = {
