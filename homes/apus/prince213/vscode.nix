@@ -9,10 +9,11 @@
       enableUpdateCheck = false;
       extensions =
         let
-          inherit (pkgs.vscode-marketplace.github) copilot-chat;
+          inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
         in
         with pkgs.open-vsx;
         [
+          copilot
           copilot-chat
           github.github-vscode-theme
           golang.go
