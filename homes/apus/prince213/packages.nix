@@ -1,4 +1,9 @@
-{ nix-packages, pkgs, ... }:
+{
+  nix-packages,
+  lib,
+  pkgs,
+  ...
+}:
 {
   programs.btop.enable = true;
 
@@ -48,4 +53,10 @@
     wl-clipboard
     wubi98-fonts
   ];
+
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "vscode"
+    ];
 }

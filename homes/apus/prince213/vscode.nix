@@ -2,7 +2,7 @@
 {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium;
+    package = pkgs.vscode;
     mutableExtensionsDir = false;
     profiles.default = {
       enableExtensionUpdateCheck = false;
