@@ -50,6 +50,7 @@
   home.packages = with pkgs; [
     (iosevka-bin.override { variant = "SS07"; })
     nixd
+    nixfmt-rfc-style
     scrcpy
     telegram-desktop
     wl-clipboard
