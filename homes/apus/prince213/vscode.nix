@@ -1,4 +1,4 @@
-{ vscode-extensions, pkgs, ... }:
+{ pkgs, ... }:
 {
   programs.vscode = {
     enable = true;
@@ -7,7 +7,7 @@
     profiles.default = {
       enableExtensionUpdateCheck = false;
       enableUpdateCheck = false;
-      extensions = with vscode-extensions.extensions.${pkgs.system}.open-vsx; [
+      extensions = with pkgs.open-vsx; [
         github.github-vscode-theme
         golang.go
         jnoortheen.nix-ide

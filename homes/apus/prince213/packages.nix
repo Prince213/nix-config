@@ -1,5 +1,6 @@
 {
   nix-packages,
+  vscode-extensions,
   lib,
   pkgs,
   ...
@@ -43,6 +44,7 @@
 
   nixpkgs.overlays = [
     nix-packages.overlays.wubi98-fonts
+    vscode-extensions.overlays.default
   ];
 
   home.packages = with pkgs; [
