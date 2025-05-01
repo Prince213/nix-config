@@ -26,6 +26,10 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-topology = {
+      url = "github:oddlama/nix-topology";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -57,6 +61,7 @@
       home-manager,
       neovim-nightly,
       nix-index-database,
+      nix-topology,
       nixvim,
       plasma-manager,
       treefmt-nix,
