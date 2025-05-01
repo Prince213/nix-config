@@ -479,22 +479,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
-      "locked": {
-        "lastModified": 1744868846,
-        "narHash": "sha256-5RJTdUHDmj12Qsv7XOhuospjAjATNiTMElplWnJE9Hs=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "ebe4301cbd8f81c4f8d3244b3632338bbeb6d49c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "ebe4301cbd8f81c4f8d3244b3632338bbeb6d49c",
-        "type": "github"
-      }
-    },
     "nixvim": {
       "inputs": {
         "flake-parts": "flake-parts_5",
@@ -589,8 +573,8 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1745923270,
-        "narHash": "sha256-qj9NfcOmlpnCRQq6yV0f0qMYwYtqGJsTrdZvGafXgqg=",
+        "lastModified": 1746076247,
+        "narHash": "sha256-38G6dJx/zJ932brYlzAXMHkky1mb3N5Xedz/JH0WSOA=",
         "path": "/home/prince213/Documents/Projects/nix-secrets",
         "type": "path"
       },
@@ -736,7 +720,9 @@
     "vscode-extensions": {
       "inputs": {
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1745978191,
