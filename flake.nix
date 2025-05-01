@@ -71,6 +71,7 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [ "x86_64-linux" ];
       imports = [
+        nix-topology.flakeModule
         treefmt-nix.flakeModule
       ];
       flake.nixosConfigurations = {
@@ -98,6 +99,7 @@
             }
             disko.nixosModules.default
             home-manager.nixosModules.default
+            nix-topology.nixosModules.default
           ];
         };
         cetus = nixpkgs.lib.nixosSystem {
@@ -106,6 +108,7 @@
             ./common/system
             secrets.nixosModules.cetus
             disko.nixosModules.default
+            nix-topology.nixosModules.default
           ];
         };
         draco = nixpkgs.lib.nixosSystem {
@@ -114,10 +117,13 @@
             ./common/system
             secrets.nixosModules.draco
             disko.nixosModules.default
+            nix-topology.nixosModules.default
           ];
         };
       };
       perSystem = {
+        topology = {
+        };
         treefmt = {
           projectRootFile = "flake.nix";
           programs.nixfmt.enable = true;
