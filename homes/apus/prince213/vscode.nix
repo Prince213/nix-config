@@ -17,6 +17,7 @@
         pkief.material-icon-theme
       ];
       userSettings = {
+        "telemetry.telemetryLevel" = "off";
         "editor.fontFamily" = "Iosevka SS07";
         "workbench.colorTheme" = "GitHub Dark Default";
         "workbench.iconTheme" = "material-icon-theme";
