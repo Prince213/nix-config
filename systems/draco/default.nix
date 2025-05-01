@@ -5,6 +5,7 @@
   time.timeZone = "Asia/Shanghai";
 
   imports = [
+    ./boot.nix
     ./disk.nix
   ];
 }
