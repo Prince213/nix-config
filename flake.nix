@@ -108,6 +108,7 @@
             ./systems/draco
             ./common/system
             secrets.nixosModules.draco
+            disko.nixosModules.default
           ];
         };
       };
