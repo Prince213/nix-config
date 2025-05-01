@@ -7,15 +7,21 @@
     profiles.default = {
       enableExtensionUpdateCheck = false;
       enableUpdateCheck = false;
-      extensions = with pkgs.open-vsx; [
-        github.github-vscode-theme
-        golang.go
-        jnoortheen.nix-ide
-        lencerf.beancount
-        mkhl.direnv
-        myriad-dreamin.tinymist
-        pkief.material-icon-theme
-      ];
+      extensions =
+        let
+          inherit (pkgs.vscode-marketplace.github) copilot-chat;
+        in
+        with pkgs.open-vsx;
+        [
+          copilot-chat
+          github.github-vscode-theme
+          golang.go
+          jnoortheen.nix-ide
+          lencerf.beancount
+          mkhl.direnv
+          myriad-dreamin.tinymist
+          pkief.material-icon-theme
+        ];
       userSettings = {
         "telemetry.telemetryLevel" = "off";
         "editor.fontFamily" = "Iosevka SS07";

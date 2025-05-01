@@ -60,5 +60,6 @@
     pkg:
     builtins.elem (lib.getName pkg) [
       "vscode"
+      "vscode-extension-github-copilot-chat"
     ];
 }
