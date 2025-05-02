@@ -1,5 +1,7 @@
 { config, ... }:
 {
+  services.userborn.enable = true;
+
   users.users.prince213 = {
     isNormalUser = true;
     extraGroups = [
