@@ -3,7 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     secrets = {
-      url = "/home/prince213/Documents/Projects/nix-secrets";
+      url = "git+file:///home/prince213/Documents/Projects/nix-secrets";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-packages = {
