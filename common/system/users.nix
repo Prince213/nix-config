@@ -1,4 +1,3 @@
 {
-  users = {
-  };
+  users.mutableUsers = false;
 }
