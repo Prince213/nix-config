@@ -125,6 +125,7 @@
             ./systems/orion
             ./common/system
             secrets.nixosModules.orion
+            disko.nixosModules.default
             nix-topology.nixosModules.default
           ];
         };
