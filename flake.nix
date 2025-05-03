@@ -4,7 +4,10 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     secrets = {
       url = "git+file:///home/prince213/Documents/Projects/nix-secrets";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        nix-packages.follows = "nix-packages";
+      };
     };
     nix-packages = {
       url = "sourcehut:~prince213/nix-packages";
@@ -71,6 +74,7 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [ "x86_64-linux" ];
       imports = [
+        secrets.flakeModules.default
         nix-topology.flakeModule
         treefmt-nix.flakeModule
       ];
