@@ -18,6 +18,7 @@
     ./networking.nix
     ./nix.nix
     ./packages.nix
+    ./printing.nix
     ./users.nix
   ];
 }
