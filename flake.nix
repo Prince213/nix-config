@@ -120,6 +120,14 @@
             nix-topology.nixosModules.default
           ];
         };
+        orion = nixpkgs.lib.nixosSystem {
+          modules = [
+            ./systems/orion
+            ./common/system
+            secrets.nixosModules.orion
+            nix-topology.nixosModules.default
+          ];
+        };
       };
       perSystem = {
         topology = {
