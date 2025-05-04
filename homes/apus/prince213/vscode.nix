@@ -10,6 +10,7 @@
       extensions =
         let
           inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
+          inherit (pkgs.vscode-marketplace.ms-python) vscode-pylance;
         in
         with pkgs.open-vsx;
         [
@@ -24,6 +25,7 @@
           ms-python.python
           myriad-dreamin.tinymist
           pkief.material-icon-theme
+          vscode-pylance
         ];
       userSettings = {
         "telemetry.telemetryLevel" = "off";
