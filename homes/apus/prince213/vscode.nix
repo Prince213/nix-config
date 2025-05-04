@@ -20,6 +20,7 @@
           jnoortheen.nix-ide
           lencerf.beancount
           mkhl.direnv
+          ms-python.python
           myriad-dreamin.tinymist
           pkief.material-icon-theme
         ];
