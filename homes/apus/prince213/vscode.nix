@@ -13,6 +13,7 @@
         in
         with pkgs.open-vsx;
         [
+          charliermarsh.ruff
           copilot
           copilot-chat
           github.github-vscode-theme
