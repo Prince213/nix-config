@@ -1,4 +1,5 @@
 {
   nix = {
+    channel.enable = false;
   };
 }
