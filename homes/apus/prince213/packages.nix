@@ -51,6 +51,7 @@
     (iosevka-bin.override { variant = "SS07"; })
     nixd
     nixfmt-rfc-style
+    python3
     scrcpy
     telegram-desktop
     wl-clipboard
