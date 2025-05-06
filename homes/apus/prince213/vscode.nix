@@ -19,6 +19,7 @@
           copilot-chat
           github.github-vscode-theme
           golang.go
+          james-yu.latex-workshop
           jnoortheen.nix-ide
           lencerf.beancount
           mkhl.direnv
