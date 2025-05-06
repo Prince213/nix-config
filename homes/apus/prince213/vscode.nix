@@ -11,6 +11,7 @@
         let
           inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
           inherit (pkgs.vscode-marketplace.ms-python) vscode-pylance;
+          inherit (pkgs.vscode-marketplace.seanwu) vscode-qt-for-python;
         in
         with pkgs.open-vsx;
         [
@@ -27,6 +28,7 @@
           myriad-dreamin.tinymist
           pkief.material-icon-theme
           vscode-pylance
+          vscode-qt-for-python
         ];
       userSettings = {
         "telemetry.telemetryLevel" = "off";
