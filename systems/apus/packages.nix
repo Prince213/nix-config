@@ -10,6 +10,10 @@
 
   programs.localsend.enable = true;
 
+  programs.nix-ld = {
+    enable = true;
+  };
+
   programs.steam.enable = true;
 
   virtualisation.libvirtd.enable = true;
