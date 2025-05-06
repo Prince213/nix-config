@@ -12,6 +12,8 @@
 
   programs.steam.enable = true;
 
+  virtualisation.libvirtd.enable = true;
+
   systemd.services.ensure-printers = {
     wants = [ "network-online.target" ];
     after = [ "network-online.target" ];
