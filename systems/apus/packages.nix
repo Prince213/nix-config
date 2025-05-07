@@ -2,6 +2,10 @@
 {
   hardware.enableRedistributableFirmware = true;
 
+  programs.appimage = {
+    enable = true;
+  };
+
   hardware.bluetooth.enable = true;
 
   programs.clash-verge.enable = true;
