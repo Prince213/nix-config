@@ -41,7 +41,7 @@
   programs.zoxide.enable = true;
 
   nixpkgs.overlays = [
-    nix-packages.overlays.wubi98-fonts
+    nix-packages.overlays.default
     vscode-extensions.overlays.default
   ];
 
