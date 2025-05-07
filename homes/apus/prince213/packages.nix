@@ -46,6 +46,7 @@
   ];
 
   home.packages = with pkgs; [
+    cursor
     (iosevka-bin.override { variant = "SS07"; })
     nix-output-monitor
     nixd
@@ -61,6 +62,8 @@
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
+      "cursor"
+
       "vscode"
       "vscode-extension-github-copilot"
       "vscode-extension-github-copilot-chat"
