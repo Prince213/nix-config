@@ -1,2 +1,3 @@
 {
+  programs.nh.enable = true;
 }

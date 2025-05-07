@@ -27,8 +27,6 @@
     pinentry.package = pkgs.pinentry-qt;
   };
 
-  programs.nh.enable = true;
-
   programs.nix-index-database.comma.enable = true;
 
   programs.ripgrep.enable = true;
