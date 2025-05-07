@@ -49,6 +49,7 @@
 
   home.packages = with pkgs; [
     (iosevka-bin.override { variant = "SS07"; })
+    nix-output-monitor
     nixd
     nixfmt-rfc-style
     python3
