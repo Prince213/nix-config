@@ -54,6 +54,7 @@
     python3
     scrcpy
     telegram-desktop
+    wemeet
     wl-clipboard
     wubi98-fonts
   ];
@@ -65,5 +66,9 @@
       "vscode-extension-github-copilot"
       "vscode-extension-github-copilot-chat"
       "vscode-extension-ms-python-vscode-pylance"
+
+      # wemeet
+      "libwemeetwrap"
+      "wemeet"
     ];
 }
