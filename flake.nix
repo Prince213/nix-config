@@ -106,6 +106,7 @@
                 ];
               };
             }
+            lix-module.nixosModules.default
             disko.nixosModules.default
             home-manager.nixosModules.default
             nix-topology.nixosModules.default
