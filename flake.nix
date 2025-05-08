@@ -14,7 +14,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-packages = {
-      url = "git+file:///home/prince213/Documents/Projects/nix-packages";
+      url = "sourcehut:~prince213/nix-packages";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
