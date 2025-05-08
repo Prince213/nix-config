@@ -9,6 +9,10 @@
         nix-packages.follows = "nix-packages";
       };
     };
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0-3.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-packages = {
       url = "git+file:///home/prince213/Documents/Projects/nix-packages";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -59,6 +63,7 @@
       nixpkgs,
       flake-parts,
       secrets,
+      lix-module,
       nix-packages,
       disko,
       home-manager,
