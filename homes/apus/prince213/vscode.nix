@@ -23,6 +23,7 @@
           james-yu.latex-workshop
           jnoortheen.nix-ide
           lencerf.beancount
+          llvm-vs-code-extensions.vscode-clangd
           mkhl.direnv
           ms-python.python
           myriad-dreamin.tinymist
