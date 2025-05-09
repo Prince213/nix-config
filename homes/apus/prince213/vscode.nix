@@ -11,6 +11,7 @@
         let
           inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
           inherit (pkgs.vscode-marketplace.ms-python) vscode-pylance;
+          inherit (pkgs.vscode-marketplace.platformio) platformio-ide;
           inherit (pkgs.vscode-marketplace.seanwu) vscode-qt-for-python;
         in
         with pkgs.open-vsx;
@@ -28,6 +29,7 @@
           ms-python.python
           myriad-dreamin.tinymist
           pkief.material-icon-theme
+          platformio-ide
           vscode-pylance
           vscode-qt-for-python
         ];
