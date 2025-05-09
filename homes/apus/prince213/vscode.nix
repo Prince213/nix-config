@@ -41,6 +41,8 @@
         "workbench.colorTheme" = "GitHub Dark Default";
         "workbench.iconTheme" = "material-icon-theme";
 
+        "C_Cpp.intelliSenseEngine" = "disabled";
+
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nixd";
       };
