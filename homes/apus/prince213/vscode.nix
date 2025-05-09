@@ -11,6 +11,7 @@
         let
           inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
           inherit (pkgs.vscode-marketplace.ms-python) vscode-pylance;
+          inherit (pkgs.vscode-marketplace.ms-vscode) cpptools;
           inherit (pkgs.vscode-marketplace.platformio) platformio-ide;
           inherit (pkgs.vscode-marketplace.seanwu) vscode-qt-for-python;
         in
@@ -27,6 +28,7 @@
           llvm-vs-code-extensions.vscode-clangd
           mkhl.direnv
           ms-python.python
+          cpptools
           myriad-dreamin.tinymist
           pkief.material-icon-theme
           platformio-ide

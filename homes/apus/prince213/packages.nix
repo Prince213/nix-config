@@ -68,6 +68,7 @@
       "vscode-extension-github-copilot"
       "vscode-extension-github-copilot-chat"
       "vscode-extension-ms-python-vscode-pylance"
+      "vscode-extension-ms-vscode-cpptools"
 
       # wemeet
       "libwemeetwrap"
