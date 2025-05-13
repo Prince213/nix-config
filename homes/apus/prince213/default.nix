@@ -12,5 +12,6 @@
     ./nixd.nix
     ./packages.nix
     ./vscode.nix
+    ./zed.nix
   ];
 }

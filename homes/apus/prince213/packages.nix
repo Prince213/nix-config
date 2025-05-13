@@ -38,13 +38,6 @@
 
   programs.tmux.enable = true;
 
-  programs.zed-editor = {
-    enable = true;
-    extensions = [
-      "nix"
-    ];
-  };
-
   programs.zoxide.enable = true;
 
   nixpkgs.overlays = [
