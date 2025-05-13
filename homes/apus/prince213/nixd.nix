@@ -26,4 +26,10 @@ in
       };
     };
   };
+
+  programs.zed-editor = {
+    userSettings.lsp.nixd = {
+      inherit settings;
+    };
+  };
 }
