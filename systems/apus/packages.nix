@@ -37,6 +37,10 @@
     intel-media-driver
   ];
 
+  environment.plasma6.excludePackages = [
+    pkgs.kdePackages.kate
+  ];
+
   nixpkgs.config = {
     allowUnfreePredicate =
       pkg:
