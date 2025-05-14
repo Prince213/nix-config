@@ -5,11 +5,7 @@
       "nix"
     ];
     userSettings = {
-      theme = {
-        mode = "system";
-        dark = "Ayu Mirage";
-        light = "Ayu Light";
-      };
+      theme = "Ayu Mirage";
       buffer_font_family = "Iosevka SS07";
       languages = {
         Nix = {
