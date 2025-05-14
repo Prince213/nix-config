@@ -8,8 +8,6 @@
 
   hardware.bluetooth.enable = true;
 
-  programs.clash-verge.enable = true;
-
   programs.fish.enable = true;
 
   programs.localsend.enable = true;
@@ -41,18 +39,10 @@
     pkgs.kdePackages.kate
   ];
 
-  nixpkgs.config = {
-    allowUnfreePredicate =
-      pkg:
-      builtins.elem (lib.getName pkg) [
-        "steam"
-        "steam-unwrapped"
-      ];
-    permittedInsecurePackages = [
-      "clash-verge-rev-2.2.3"
-      "clash-verge-rev-service-2.2.3"
-      "clash-verge-rev-unwrapped-2.2.3"
-      "clash-verge-rev-webui-2.2.3"
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "steam"
+      "steam-unwrapped"
     ];
-  };
 }
