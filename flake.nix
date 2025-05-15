@@ -135,6 +135,7 @@
             ./systems/nun
             ./common/system
             secrets.nixosModules.nun
+            disko.nixosModules.default
             nix-topology.nixosModules.default
           ];
         };
