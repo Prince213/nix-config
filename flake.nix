@@ -130,6 +130,14 @@
             nix-topology.nixosModules.default
           ];
         };
+        nun = nixpkgs.lib.nixosSystem {
+          modules = [
+            ./systems/nun
+            ./common/system
+            secrets.nixosModules.nun
+            nix-topology.nixosModules.default
+          ];
+        };
         orion = nixpkgs.lib.nixosSystem {
           modules = [
             ./systems/orion
