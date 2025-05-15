@@ -4,9 +4,13 @@
 
   boot.loader = {
     efi.canTouchEfiVariables = true;
+    grub = {
+      configurationLimit = 3;
+    };
     systemd-boot = {
       enable = lib.mkDefault true;
       editor = false;
+      configurationLimit = 3;
     };
   };
 }
