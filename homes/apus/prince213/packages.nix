@@ -16,12 +16,6 @@
 
   programs.go.enable = true;
 
-  programs.gpg.enable = true;
-  services.gpg-agent = {
-    enable = true;
-    pinentry.package = pkgs.pinentry-qt;
-  };
-
   programs.nix-index-database.comma.enable = true;
 
   programs.ripgrep.enable = true;

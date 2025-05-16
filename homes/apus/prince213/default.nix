@@ -6,6 +6,7 @@
     ./desktop.nix
     ./direnv.nix
     ./firefox.nix
+    ./gpg.nix
     ./jujutsu.nix
     ./kitty.nix
     ./neovim.nix
