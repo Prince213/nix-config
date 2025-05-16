@@ -4,6 +4,7 @@
   imports = [
     ./aerc.nix
     ./desktop.nix
+    ./direnv.nix
     ./firefox.nix
     ./jujutsu.nix
     ./kitty.nix
