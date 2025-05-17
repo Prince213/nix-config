@@ -10,6 +10,7 @@
 
   programs.chromium = {
     enable = true;
+    package = pkgs.google-chrome;
   };
 
   programs.fastfetch.enable = true;
@@ -54,6 +55,7 @@
     pkg:
     builtins.elem (lib.getName pkg) [
       "cursor"
+      "google-chrome"
 
       "vscode"
       "vscode-extension-github-copilot"
