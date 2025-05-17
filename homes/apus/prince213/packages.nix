@@ -23,7 +23,14 @@
   programs.ssh.enable = true;
   services.ssh-agent.enable = true;
 
-  programs.starship.enable = true;
+  programs.starship = {
+    enable = true;
+    settings = {
+      time = {
+        disabled = false;
+      };
+    };
+  };
 
   programs.tmux.enable = true;
 
