@@ -13,6 +13,7 @@
     ./nix.nix
     ./nixd.nix
     ./packages.nix
+    ./starship.nix
     ./vscode.nix
     ./zed.nix
   ];
