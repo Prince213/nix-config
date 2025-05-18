@@ -26,6 +26,8 @@
     after = [ "network-online.target" ];
   };
 
+  documentation.nixos.enable = false;
+
   fonts.packages = with pkgs; [
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
