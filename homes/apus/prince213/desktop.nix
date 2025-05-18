@@ -18,4 +18,8 @@
       };
     };
   };
+
+  xdg.mimeApps = {
+    enable = true;
+  };
 }
