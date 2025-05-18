@@ -1,3 +1,8 @@
+let
+  # https://github.com/NixOS/nixpkgs/pull/407964
+  # com.google.Chrome.desktop
+  google-chrome = "google-chrome.desktop";
+in
 {
   programs.plasma = {
     enable = true;
@@ -33,7 +38,7 @@
                 "applications:org.kde.dolphin.desktop"
                 "applications:kitty.desktop"
                 "applications:dev.zed.Zed.desktop"
-                "applications:com.google.Chrome.desktop"
+                "applications:${google-chrome}"
               ];
             };
           }
@@ -50,13 +55,13 @@
     enable = true;
     associations = {
       added = {
-        "x-scheme-handler/http" = [ "com.google.Chrome.desktop" ];
-        "x-scheme-handler/https" = [ "com.google.Chrome.desktop" ];
+        "x-scheme-handler/http" = [ google-chrome ];
+        "x-scheme-handler/https" = [ google-chrome ];
       };
     };
     defaultApplications = {
-      "x-scheme-handler/http" = [ "com.google.Chrome.desktop;" ];
-      "x-scheme-handler/https" = [ "com.google.Chrome.desktop;" ];
+      "x-scheme-handler/http" = [ google-chrome ];
+      "x-scheme-handler/https" = [ google-chrome ];
     };
   };
 }
