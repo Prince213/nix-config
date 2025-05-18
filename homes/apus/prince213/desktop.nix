@@ -21,7 +21,11 @@
       {
         floating = true;
         widgets = [
-          "org.kde.plasma.kickoff"
+          {
+            kickoff = {
+              icon = "nix-snowflake";
+            };
+          }
           "org.kde.plasma.pager"
           "org.kde.plasma.icontasks"
           "org.kde.plasma.marginsseparator"
