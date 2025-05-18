@@ -27,7 +27,16 @@
             };
           }
           "org.kde.plasma.pager"
-          "org.kde.plasma.icontasks"
+          {
+            iconTasks = {
+              launchers = [
+                "applications:org.kde.dolphin.desktop"
+                "applications:kitty.desktop"
+                "applications:dev.zed.Zed.desktop"
+                "applications:com.google.Chrome.desktop"
+              ];
+            };
+          }
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.systemtray"
           "org.kde.plasma.digitalclock"
