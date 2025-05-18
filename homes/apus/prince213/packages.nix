@@ -8,11 +8,6 @@
 {
   programs.btop.enable = true;
 
-  programs.chromium = {
-    enable = true;
-    package = pkgs.google-chrome;
-  };
-
   programs.fastfetch.enable = true;
 
   programs.fish.enable = true;

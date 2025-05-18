@@ -3,6 +3,7 @@
 
   imports = [
     ./aerc.nix
+    ./chrome.nix
     ./desktop.nix
     ./direnv.nix
     ./firefox.nix
