@@ -21,5 +21,15 @@
 
   xdg.mimeApps = {
     enable = true;
+    associations = {
+      added = {
+        "x-scheme-handler/http" = [ "com.google.Chrome.desktop" ];
+        "x-scheme-handler/https" = [ "com.google.Chrome.desktop" ];
+      };
+    };
+    defaultApplications = {
+      "x-scheme-handler/http" = [ "com.google.Chrome.desktop;" ];
+      "x-scheme-handler/https" = [ "com.google.Chrome.desktop;" ];
+    };
   };
 }
