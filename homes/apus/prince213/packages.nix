@@ -33,6 +33,7 @@
   ];
 
   home.packages = with pkgs; [
+    clang-tools
     cursor
     (iosevka-bin.override { variant = "SS07"; })
     nix-output-monitor
