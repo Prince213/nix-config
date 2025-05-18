@@ -720,11 +720,11 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1747449013,
-        "narHash": "sha256-GJn1RYCdCOhd4lMfGtrn2u+k6h2XnWFHpkyzlj+/pPw=",
+        "lastModified": 1747495941,
+        "narHash": "sha256-h/35nPaCLRvtoIN/c8ZqbEKAeK/YTGuB7IKEj+kBLkU=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "61c44d7a7fdb3d9ab1c36fdb6f16bffca01cb87d",
+        "rev": "1deeb7f689ad5c23b738c56ce4afea5ef9bbd7d1",
         "type": "github"
       },
       "original": {
@@ -838,11 +838,11 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1747508718,
-        "narHash": "sha256-SZ46HbjjB6e5H9wcqSwGswN8FAYzvWMtmYtMcP2SjcI=",
-        "ref": "e66d89566d8d33f7f4e9b23f20666fe990a66b73",
-        "rev": "e66d89566d8d33f7f4e9b23f20666fe990a66b73",
-        "revCount": 183,
+        "lastModified": 1747536685,
+        "narHash": "sha256-SXGjQuzTyOpO5VVOOt4yh/hDYw7P4ZB+1j8bFgxxBSY=",
+        "ref": "b30ddff1c1d19beffe3e8b1effd243148170d098",
+        "rev": "b30ddff1c1d19beffe3e8b1effd243148170d098",
+        "revCount": 185,
         "type": "git",
         "url": "file:///home/prince213/Documents/Projects/nix-secrets"
       },
@@ -1053,11 +1053,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747446936,
-        "narHash": "sha256-O5HLvg27oWAUHaZvAK8p30whJLlZSAUWMu7RZwWwX/0=",
+        "lastModified": 1747533823,
+        "narHash": "sha256-/SRma+VrauAHu8sIIxSU8zYQScE2xCznQzfUalDIT6M=",
         "owner": "nix-community",
         "repo": "nix-vscode-extensions",
-        "rev": "c23c72f97fc61391f9022f5f426c1b737b2d639a",
+        "rev": "047e061d9369a9bf58e5e4bf7cca016ecc72f72c",
         "type": "github"
       },
       "original": {
