@@ -2,6 +2,7 @@
   programs.zed-editor = {
     enable = true;
     extensions = [
+      "beancount"
       "nix"
     ];
     userSettings = {
