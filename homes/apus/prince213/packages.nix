@@ -10,6 +10,8 @@
 
   programs.fastfetch.enable = true;
 
+  programs.fd.enable = true;
+
   programs.fish.enable = true;
 
   programs.git.enable = true;
