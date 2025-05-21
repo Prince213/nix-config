@@ -7,6 +7,9 @@
     grub = {
       configurationLimit = 3;
     };
+    limine = {
+      maxGenerations = 3;
+    };
     systemd-boot = {
       enable = lib.mkDefault true;
       editor = false;
