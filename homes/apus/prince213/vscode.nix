@@ -34,6 +34,7 @@
           platformio-ide
           vscode-pylance
           vscode-qt-for-python
+          ziglang.vscode-zig
         ];
       userSettings = {
         "telemetry.telemetryLevel" = "off";
