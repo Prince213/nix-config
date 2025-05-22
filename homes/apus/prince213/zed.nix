@@ -4,6 +4,7 @@
     extensions = [
       "beancount"
       "nix"
+      "zig"
     ];
     userSettings = {
       theme = "Ayu Mirage";
