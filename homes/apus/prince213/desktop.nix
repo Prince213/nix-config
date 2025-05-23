@@ -1,7 +1,5 @@
 let
-  # https://github.com/NixOS/nixpkgs/pull/407964
-  # com.google.Chrome.desktop
-  google-chrome = "google-chrome.desktop";
+  google-chrome = "com.google.Chrome.desktop";
 in
 {
   programs.plasma = {
