@@ -27,6 +27,14 @@
       mapleader = ",";
     };
 
+    keymaps = [
+      {
+        mode = "n";
+        key = "<Leader>e";
+        action = "<Cmd>Neotree toggle<CR>";
+      }
+    ];
+
     plugins = {
       blink-cmp.enable = true;
 
