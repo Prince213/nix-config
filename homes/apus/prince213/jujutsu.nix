@@ -9,6 +9,16 @@
         behavior = "own";
         backend = "gpg";
       };
+      templates = {
+        duplicate_description = ''
+          concat(
+            description,
+            "(cherry picked from commit ",
+            commit_id,
+            ")",
+          )
+        '';
+      };
     };
   };
 }
