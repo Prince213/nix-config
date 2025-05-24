@@ -597,11 +597,11 @@
         "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
-        "lastModified": 1748057832,
-        "narHash": "sha256-mtt3jWG74Pi/y3n5SFTD4cKRaRuQ8wIc9CrwmiTrh0g=",
+        "lastModified": 1748070382,
+        "narHash": "sha256-LLsF+MimsyvzDmGtdRXfFoF1dLh1iROf4JlOmyTuwOA=",
         "owner": "~prince213",
         "repo": "nix-packages",
-        "rev": "bea455a55ee02f5ad4ea923518ebe835bb50964e",
+        "rev": "121c0f0fbbf82259c7f2825608d255e4c1dd131d",
         "type": "sourcehut"
       },
       "original": {
@@ -696,16 +696,16 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1747744144,
-        "narHash": "sha256-W7lqHp0qZiENCDwUZ5EX/lNhxjMdNapFnbErcbnP11Q=",
+        "lastModified": 1748031521,
+        "narHash": "sha256-rb5VLpLzyyD+UvpMD1sTtxEvsCCnO99G8KgFtNn6/jg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2795c506fe8fb7b03c36ccb51f75b6df0ab2553f",
+        "rev": "450101400b480d81f0ae5dd5cc917083131fedce",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "ref": "nixos-unstable-small",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -838,11 +838,11 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1748058299,
-        "narHash": "sha256-xuLdnemC8gTvOyYedTy+7w+LD1dOw0hUWZhu+3F4mvk=",
-        "ref": "7660cb2383f97fd2be495a2d089b341888bea1d7",
-        "rev": "7660cb2383f97fd2be495a2d089b341888bea1d7",
-        "revCount": 195,
+        "lastModified": 1748070525,
+        "narHash": "sha256-VdMaWdxPpdxAtbILUHYDwGepXy6pxXzs2wKV3H/cIaY=",
+        "ref": "81238ee862f6feb9cfd9b46f7a9b26ffb1deef08",
+        "rev": "81238ee862f6feb9cfd9b46f7a9b26ffb1deef08",
+        "revCount": 197,
         "type": "git",
         "url": "file:///home/prince213/Documents/Projects/nix-secrets"
       },
