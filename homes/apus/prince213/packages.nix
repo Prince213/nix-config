@@ -8,6 +8,8 @@
 {
   programs.btop.enable = true;
 
+  programs.element-desktop.enable = true;
+
   programs.fd.enable = true;
 
   programs.fish.enable = true;
