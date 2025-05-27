@@ -1,5 +1,5 @@
 let
-  google-chrome = "com.google.Chrome.desktop";
+  google-chrome = "google-chrome.desktop";
 in
 {
   programs.plasma = {
