@@ -3,7 +3,7 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscode;
-    mutableExtensionsDir = false;
+    mutableExtensionsDir = true;
     profiles.default = {
       enableExtensionUpdateCheck = false;
       enableUpdateCheck = false;
