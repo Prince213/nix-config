@@ -17,6 +17,7 @@
         in
         with pkgs.open-vsx;
         [
+          bierner.markdown-mermaid
           charliermarsh.ruff
           # copilot
           # copilot-chat
