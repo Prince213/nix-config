@@ -42,6 +42,8 @@
         "workbench.colorTheme" = "GitHub Dark Default";
         "workbench.iconTheme" = "material-icon-theme";
 
+        "github.copilot.nextEditSuggestions.enabled" = true;
+
         "C_Cpp.intelliSenseEngine" = "disabled";
 
         "nix.enableLanguageServer" = true;
