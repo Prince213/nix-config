@@ -83,70 +83,73 @@
         nix-topology.flakeModule
         treefmt-nix.flakeModule
       ];
-      flake.nixosConfigurations = {
-        apus = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./homes/apus
-            ./systems/apus
-            ./common/system
-            secrets.nixosModules.apus
-            {
-              home-manager = {
-                extraSpecialArgs = {
-                  inherit
-                    nix-packages
-                    neovim-nightly
-                    vscode-extensions
-                    ;
+      flake = {
+        homeModules.default = ./modules/home-manager;
+        nixosConfigurations = {
+          apus = nixpkgs.lib.nixosSystem {
+            modules = [
+              ./homes/apus
+              ./systems/apus
+              ./common/system
+              secrets.nixosModules.apus
+              {
+                home-manager = {
+                  extraSpecialArgs = {
+                    inherit
+                      nix-packages
+                      neovim-nightly
+                      vscode-extensions
+                      ;
+                  };
+                  sharedModules = [
+                    nixvim.homeManagerModules.default
+                    nix-index-database.hmModules.nix-index
+                    plasma-manager.homeManagerModules.plasma-manager
+                  ];
                 };
-                sharedModules = [
-                  nixvim.homeManagerModules.default
-                  nix-index-database.hmModules.nix-index
-                  plasma-manager.homeManagerModules.plasma-manager
-                ];
-              };
-            }
-            # lix-module.nixosModules.default
-            disko.nixosModules.default
-            home-manager.nixosModules.default
-            nix-topology.nixosModules.default
-          ];
-        };
-        cetus = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./systems/cetus
-            ./common/system
-            secrets.nixosModules.cetus
-            disko.nixosModules.default
-            nix-topology.nixosModules.default
-          ];
-        };
-        draco = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./systems/draco
-            ./common/system
-            secrets.nixosModules.draco
-            disko.nixosModules.default
-            nix-topology.nixosModules.default
-          ];
-        };
-        nun = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./systems/nun
-            ./common/system
-            secrets.nixosModules.nun
-            disko.nixosModules.default
-            nix-topology.nixosModules.default
-          ];
-        };
-        orion = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./systems/orion
-            ./common/system
-            secrets.nixosModules.orion
-            disko.nixosModules.default
-            nix-topology.nixosModules.default
-          ];
+              }
+              # lix-module.nixosModules.default
+              disko.nixosModules.default
+              home-manager.nixosModules.default
+              nix-topology.nixosModules.default
+            ];
+          };
+          cetus = nixpkgs.lib.nixosSystem {
+            modules = [
+              ./systems/cetus
+              ./common/system
+              secrets.nixosModules.cetus
+              disko.nixosModules.default
+              nix-topology.nixosModules.default
+            ];
+          };
+          draco = nixpkgs.lib.nixosSystem {
+            modules = [
+              ./systems/draco
+              ./common/system
+              secrets.nixosModules.draco
+              disko.nixosModules.default
+              nix-topology.nixosModules.default
+            ];
+          };
+          nun = nixpkgs.lib.nixosSystem {
+            modules = [
+              ./systems/nun
+              ./common/system
+              secrets.nixosModules.nun
+              disko.nixosModules.default
+              nix-topology.nixosModules.default
+            ];
+          };
+          orion = nixpkgs.lib.nixosSystem {
+            modules = [
+              ./systems/orion
+              ./common/system
+              secrets.nixosModules.orion
+              disko.nixosModules.default
+              nix-topology.nixosModules.default
+            ];
+          };
         };
       };
       perSystem = {
