@@ -60,6 +60,7 @@
 
   outputs =
     inputs@{
+      self,
       nixpkgs,
       flake-parts,
       secrets,
@@ -102,6 +103,7 @@
                       ;
                   };
                   sharedModules = [
+                    self.homeModules.default
                     nixvim.homeManagerModules.default
                     nix-index-database.hmModules.nix-index
                     plasma-manager.homeManagerModules.plasma-manager
