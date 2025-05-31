@@ -9,7 +9,7 @@
       enableUpdateCheck = false;
       extensions =
         let
-          inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
+          # inherit (pkgs.vscode-marketplace.github) copilot copilot-chat;
           inherit (pkgs.vscode-marketplace.ms-python) vscode-pylance;
           inherit (pkgs.vscode-marketplace.ms-vscode) cpptools;
           inherit (pkgs.vscode-marketplace.platformio) platformio-ide;
@@ -18,8 +18,8 @@
         with pkgs.open-vsx;
         [
           charliermarsh.ruff
-          copilot
-          copilot-chat
+          # copilot
+          # copilot-chat
           github.github-vscode-theme
           golang.go
           james-yu.latex-workshop
