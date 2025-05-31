@@ -1,4 +1,5 @@
 {
   imports = [
+    ./programs/timewarrior.nix
   ];
 }
