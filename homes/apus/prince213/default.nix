@@ -15,6 +15,7 @@
     ./nixd.nix
     ./packages.nix
     ./starship.nix
+    ./taskwarrior.nix
     ./vscode.nix
     ./zed.nix
   ];
